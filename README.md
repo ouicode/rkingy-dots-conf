@@ -27,18 +27,23 @@ To Set Up Your Own
 We ran these commands to set up this repo:
 
     git init
+
     vim README.md
+
     cat > install <<EOT
     #!/bin/sh -xe
-    # TODO: cd `dirname $0`
+    cd `dirname $0`
     git submodule update --init
     .../.bin/install
     EOT
     chmod +x install
+
     git add .
+
     git commit -m 'First draft'
     git remote add origin git@github.com:ingydotnet/rkingy-dots.git
     git push -u origin master
+
     git submodule add git@github.com:ingydotnet/....git
     git submodule add git@github.com:ingydotnet/boot-dots.git
     git submodule add git@github.com:ingydotnet/ingy-dots_.git
@@ -46,4 +51,5 @@ We ran these commands to set up this repo:
     git submodule update --init
     git add .
     git commit
+
     ./install
