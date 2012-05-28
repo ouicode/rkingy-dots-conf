@@ -28,6 +28,13 @@ We ran these commands to set up this repo:
 
     git init
     vim README.md
+    cat > install <<EOT
+    #!/bin/sh -xe
+    # TODO: cd `dirname $0`
+    git submodule update --init
+    .../.bin/install
+    EOT
+    chmod +x install
     git add .
     git commit -m 'First draft'
     git remote add origin git@github.com:ingydotnet/rkingy-dots.git
