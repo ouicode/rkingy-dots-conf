@@ -1,0 +1,5 @@
+#!/bin/sh -xe
+
+# TODO: cd `dirname $0`
+git submodule update --init
+.../.bin/install
