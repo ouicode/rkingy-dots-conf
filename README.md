@@ -24,4 +24,15 @@ After that sequence, all the scripts and configs should be linked into place.
 To Set Up Your Own
 ------------------
 
-(TODO: Write this)
+We ran these commands to set up this repo:
+
+    git init
+    vim README.md
+    git add .
+    git commit -m 'First draft'
+    git remote add origin git@github.com:ingydotnet/rking-dots.git
+    git push -u origin master
+    git submodule add git@github.com:ingydotnet/....git
+    git submodule add git@github.com:ingydotnet/boot-dots.git
+    git submodule add git@github.com:ingydotnet/ingy-dots_.git
+    git submodule add git@github.com:ryanjosephking/rking-dots.git

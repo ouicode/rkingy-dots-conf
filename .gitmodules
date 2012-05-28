@@ -1,0 +1,12 @@
+[submodule "..."]
+	path = ...
+	url = git@github.com:ingydotnet/....git
+[submodule "boot-dots"]
+	path = boot-dots
+	url = git@github.com:ingydotnet/boot-dots.git
+[submodule "ingy-dots_"]
+	path = ingy-dots_
+	url = git@github.com:ingydotnet/ingy-dots_.git
+[submodule "rking-dots"]
+	path = rking-dots
+	url = git@github.com:ryanjosephking/rking-dots.git
