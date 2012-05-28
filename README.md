@@ -14,10 +14,10 @@ Useful for:
 To Use
 ------
 
-git clone git@github.com:ingydotnet/rkingy-dots.git &&
-    cd rkingy-dots &&
-    ./install &&
-    exec bash
+    git clone git@github.com:ingydotnet/rkingy-dots.git &&
+        cd rkingy-dots &&
+        ./install &&
+        exec bash
 
 After that sequence, all the scripts and configs should be linked into place.
 
@@ -30,7 +30,7 @@ We ran these commands to set up this repo:
     vim README.md
     git add .
     git commit -m 'First draft'
-    git remote add origin git@github.com:ingydotnet/rking-dots.git
+    git remote add origin git@github.com:ingydotnet/rkingy-dots.git
     git push -u origin master
     git submodule add git@github.com:ingydotnet/....git
     git submodule add git@github.com:ingydotnet/boot-dots.git
