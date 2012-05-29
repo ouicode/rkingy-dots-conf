@@ -4,6 +4,9 @@
 [submodule "boot-dots"]
 	path = boot-dots
 	url = git@github.com:ingydotnet/boot-dots.git
+[submodule "pairup-dots"]
+	path = pairup-dots
+	url = git@github.com:ouicode/pairup-dots.git
 [submodule "ingy-dots_"]
 	path = ingy-dots_
 	url = git@github.com:ingydotnet/ingy-dots_.git
