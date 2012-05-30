@@ -13,3 +13,6 @@
 [submodule "rking-dots"]
 	path = rking-dots
 	url = git@github.com:ryanjosephking/rking-dots.git
+[submodule "git-dots"]
+	path = git-dots
+	url = git@github.com:sharpsaw/git-dots.git
