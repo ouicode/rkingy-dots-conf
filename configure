@@ -3,7 +3,7 @@
 [ -z "$DOTDOTDOT_REPO" ] &&
     DOTDOTDOT_REPO=git@github.com:ingydotnet/....git
 
-[ ! -d $HOME/... ] ||
+[ -d $HOME/... ] ||
     git clone $DOTDOTDOT_REPO $HOME/...
 
 $HOME/.../bin/... configure `dirname $0`/dots.yaml
