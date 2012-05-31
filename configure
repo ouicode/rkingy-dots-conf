@@ -1,4 +1,4 @@
-#!/bin/sh -xe
+#!/bin/sh -e
 
 [ -z "$DOTDOTDOT_REPO" ] &&
     DOTDOTDOT_REPO=git@github.com:ingydotnet/....git
