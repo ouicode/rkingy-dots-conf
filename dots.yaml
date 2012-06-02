@@ -1,6 +1,9 @@
 =:
 - repo: git@github.com:ingydotnet/boot-dots.git
 - repo: git@github.com:ouicode/pairup-dots.git
+- repo: git@github.com:sharpsaw/sane-dots.git
 - repo: git@github.com:ingydotnet/ingy-dots_.git
 - repo: git@github.com:ryanjosephking/rking-dots.git
 - repo: git@github.com:sharpsaw/git-dots.git
+- repo: git@github.com:sharpsaw/ruby-dots.git
+- repo: git@github.com:olivierverdier/zsh-git-prompt.git
