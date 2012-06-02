@@ -1,9 +1,18 @@
 #!/bin/sh -e
 
+fullpwd=`dirname $0`
+
 [ -z "$DOTDOTDOT_REPO" ] &&
     DOTDOTDOT_REPO=git@github.com:ingydotnet/....git
 
 [ -d $HOME/... ] ||
     git clone $DOTDOTDOT_REPO $HOME/...
 
-$HOME/.../bin/... configure `dirname $0`/dots.yaml
+breadcrumb_link=~/.dots-conf
+[ -L $breadcrumb_link ] && rm $breadcrumb_link
+if [ ! -e $breadcrumb_link ]; then
+	ln -s $fullpwd $breadcrumb_link
+	echo "Symlinked $breadcrumb_link to this dir (for your convenience.)"
+fi
+
+$HOME/.../bin/... configure $fullpwd/dots.yaml
