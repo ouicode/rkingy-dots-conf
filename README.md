@@ -1,3 +1,4 @@
 ... conf file for rkingy pairing.
 
-See: https://gist.github.com/2841151
+This can be used as a standalone ./configure deployment, but it's mainly for:
+https://github.com/ingydotnet/pairup#readme
