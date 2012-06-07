@@ -16,3 +16,4 @@ if [ ! -e $breadcrumb_link ]; then
 fi
 
 $HOME/.../bin/... configure dots.yaml
+$HOME/.../bin/... install
