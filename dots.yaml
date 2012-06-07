@@ -11,3 +11,5 @@
 - repo: git@github.com:ingydotnet/ingy-dots_.git
 - repo: git@github.com:ryanjosephking/rking-dots.git
 - repo: git@github.com:rking/zu.git
+- repo: git@github.com:trapd00r/ls--.git
+  branch: cleanup
