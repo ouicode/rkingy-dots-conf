@@ -1,19 +1,24 @@
 #!/bin/sh -e
 
-cd `dirname $0`
+[ -z "$DOTS_YAML" ] &&
+    DOTS_YAML="`dirname $0`/dots.yaml"
 
-[ -z "$DOTDOTDOT_REPO" ] &&
-    DOTDOTDOT_REPO=git@github.com:ingydotnet/....git
+(
+    cd
 
-[ -d $HOME/... ] ||
-    git clone $DOTDOTDOT_REPO $HOME/...
+    [ -z "$DOTDOTDOT_REPO" ] &&
+        DOTDOTDOT_REPO=git@github.com:ingydotnet/....git
 
-breadcrumb_link=~/.dots-conf
-[ -L $breadcrumb_link ] && rm $breadcrumb_link
-if [ ! -e $breadcrumb_link ]; then
-	ln -s `pwd` $breadcrumb_link
-	echo "Symlinked $breadcrumb_link to this dir (for your convenience.)"
-fi
+    [ -d $HOME/... ] ||
+        git clone $DOTDOTDOT_REPO
 
-$HOME/.../bin/... configure dots.yaml
+    breadcrumb_link=~/.dots-conf
+    [ -L $breadcrumb_link ] && rm $breadcrumb_link
+    if [ ! -e $breadcrumb_link ]; then
+            ln -s `pwd` $breadcrumb_link
+            echo "Symlinked $breadcrumb_link to this dir (for convenience.)"
+    fi
+)
+
+$HOME/.../bin/... configure $DOTS_YAML
 $HOME/.../bin/... install

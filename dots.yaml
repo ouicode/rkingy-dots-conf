@@ -1,5 +1,6 @@
 =:
 - repo: git@github.com:sharpsaw/loop-dots.git
+- repo: git@github.com:sharpsaw/sharp-dots.git
 - repo: git@github.com:ouicode/pairup-dots.git
 - repo: git@github.com:sharpsaw/sane-dots.git
 - repo: git@github.com:sharpsaw/vim-dots.git
@@ -10,6 +11,6 @@
 - repo: git@github.com:sharpsaw/git-dots.git
 - repo: git@github.com:ingydotnet/ingy-dots_.git
 - repo: git@github.com:ryanjosephking/rking-dots.git
-- repo: git@github.com:rking/zu.git
 - repo: git@github.com:trapd00r/ls--.git
   branch: cleanup
+- repo: git@github.com:rking/zu.git
