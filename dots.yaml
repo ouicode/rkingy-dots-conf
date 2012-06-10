@@ -3,6 +3,7 @@
 - repo: git@github.com:sharpsaw/sharp-dots.git
 - repo: git@github.com:ouicode/pairup-dots.git
 - repo: git@github.com:sharpsaw/sane-dots.git
+- repo: git@github.com:sharpsaw/1337-dots.git
 - repo: git@github.com:sharpsaw/vim-dots.git
 - repo: git@github.com:sharpsaw/ruby-dots.git
 - repo: git@github.com:sharpsaw/perl-dots.git
