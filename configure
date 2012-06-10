@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 [ -z "$DOTS_YAML" ] &&
     DOTS_YAML="`dirname $0`/dots.yaml"
@@ -9,8 +9,15 @@
     [ -z "$DOTDOTDOT_REPO" ] &&
         DOTDOTDOT_REPO=git@github.com:ingydotnet/....git
 
-    [ -d $HOME/... ] ||
+    if [ -d ... ]; then
+        cd ...
+        bin/... remove
+        git pull
+        source lib/scripting
+        ...each git pull
+    else
         git clone $DOTDOTDOT_REPO
+    fi
 
     breadcrumb_link=~/.dots-conf
     [ -L $breadcrumb_link ] && rm $breadcrumb_link
@@ -21,4 +28,4 @@
 )
 
 $HOME/.../bin/... configure $DOTS_YAML
-$HOME/.../bin/... install
+$HOME/.../bin/... install -s
