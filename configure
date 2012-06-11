@@ -11,7 +11,7 @@
 
     if [ -d ... ]; then
         cd ...
-        bin/... remove
+        bin/... remove || true
         git pull
         source lib/scripting
         ...each git pull
